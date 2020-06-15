@@ -83,6 +83,8 @@ d_ = A[1][1]
 
 super_T = 'T'.translate(trans)
 
+rand_str = str(random.randint(10,100))
+
 x = np.linspace(-(np.sqrt(c_ + np.sqrt(c_))), np.sqrt(c_ + np.sqrt(c_)), 1000)
 y = np.linspace(-(np.sqrt(c_ + np.sqrt(c_))), np.sqrt(c_ + np.sqrt(c_)), 1000)
 X, Y = np.meshgrid(x,y)
@@ -115,7 +117,9 @@ plt.ylabel('x_2')
 plt.title(f'x{super_T}Ax = {c_}, \nBoth Positions')
 
 plt.tight_layout()
-plt.savefig('quad' + str(random.randint(10,100)) + '.pdf')
+plt.savefig('quad' + rand_str + '.pdf')
+print()
+print(f'Figure Saved to quad{rand_str}.pdf')
 plt.show()
 plt.close()
 
