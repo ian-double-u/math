@@ -115,9 +115,9 @@ plt.ylabel('x_2')
 plt.title(f'x{super_T}Ax = {c_}, \nBoth Positions')
 
 plt.tight_layout()
+plt.savefig('quad' + str(random.randint(10,100)) + '.pdf')
 plt.show()
 plt.close()
-plt.savefig('quad' + str(random.randint(10,100)) + '.pdf')
 
 # Try
 # [[5,-2],[-2,5]], c = 48
