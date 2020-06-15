@@ -5,6 +5,7 @@ import numpy as np
 from scipy import linalg
 import sys
 import matplotlib.pyplot as plt
+import random
 
 # For superscript T
 superscript_map = {
@@ -116,6 +117,8 @@ plt.title(f'x{super_T}Ax = {c_}, \nBoth Positions')
 plt.tight_layout()
 plt.show()
 plt.close()
+plt.savefig('quad' + str(random.randint(10,100)) + '.pdf')
 
+# Try
 # [[5,-2],[-2,5]], c = 48
 # [[1,-4],[-4,-5]], c = 16
